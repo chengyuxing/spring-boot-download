@@ -1,0 +1,34 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /spring-boot
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+logging:
+  level:
+    root: info
+    com.github.chengyuxing.sql: debug
+
+master-datasource:
+  driver-class-name: org.postgresql.Driver
+  username: chengyuxing
+  password: 123456
+  jdbc-url: jdbc:postgresql://127.0.0.1:5432/postgres
+
+other-datasource:
+  driver-class-name: org.postgresql.Driver
+  username: chengyuxing
+  password: 123456
+  jdbc-url: jdbc:postgresql://127.0.0.1:5432/postgres
+
+xql:
+  files:
+    home: xql/home.sql
+    index: xql/index.sql
+  constants:
+    db: qbpt_deve
+    db2: mysql

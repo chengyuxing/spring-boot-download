@@ -1,0 +1,2 @@
+# springboot搭配rabbit-sql项目模版例子
+包含多数据源配置
